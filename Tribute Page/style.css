@@ -1,0 +1,773 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f3ef;
+    color: #252525;
+    line-height: 1.7;
+}
+
+
+/* 
+    HEADER 
+*/
+
+.header {
+    width: 100%;
+    background: #151515;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #d6a84f;
+}
+
+
+/* 
+    HERO 
+*/
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background: #1c1c1c;
+    color: white;
+}
+
+.hero-content {
+    width: 55%;
+    padding: 70px 5% 70px 9%;
+}
+
+.small-title {
+    color: #d6a84f;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 550px;
+
+    color: #d2d2d2;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    background: #d6a84f;
+    color: #171717;
+
+    text-decoration: none;
+
+    border-radius: 2px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.hero-button:hover {
+    background: #ffffff;
+}
+
+.hero-image {
+    width: 45%;
+    height: 650px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* 
+   GENERAL SECTION
+ */
+
+.section {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 90px 25px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #b78935;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #202020;
+}
+
+.section-intro {
+    max-width: 750px;
+
+    margin-bottom: 35px;
+
+    color: #666;
+}
+
+
+/* 
+   ABOUT
+ */
+
+.about-content {
+    display: flex;
+    align-items: center;
+
+    gap: 55px;
+}
+
+.about-image {
+    width: 42%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 2px;
+}
+
+.about-text {
+    width: 58%;
+}
+
+.about-text h3 {
+    font-size: 27px;
+
+    margin-bottom: 20px;
+
+    color: #252525;
+}
+
+.about-text p {
+    color: #555;
+
+    margin-bottom: 17px;
+}
+
+
+/* 
+   SCIENTIFIC JOURNEY
+ */
+
+.journey-section {
+    background: #ebe8e1;
+    max-width: none;
+
+    padding-left: calc((100% - 1100px) / 2);
+    padding-right: calc((100% - 1100px) / 2);
+}
+
+.journey-content {
+    display: flex;
+    align-items: center;
+
+    gap: 60px;
+}
+
+.journey-text {
+    width: 55%;
+}
+
+.journey-text h3 {
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+.journey-text p {
+    color: #555;
+
+    margin-bottom: 18px;
+}
+
+.journey-image {
+    width: 45%;
+}
+
+.journey-image img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 2px;
+}
+
+.highlight-box {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #f8f7f3;
+
+    border-left: 4px solid #c39a4a;
+}
+
+.highlight-box strong {
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+.highlight-box ul {
+    padding-left: 20px;
+
+    color: #555;
+}
+
+
+/* 
+   PRESIDENCY
+ */
+
+.presidency-content {
+    display: flex;
+    align-items: center;
+
+    gap: 60px;
+}
+
+.presidency-image {
+    width: 48%;
+}
+
+.presidency-image img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 2px;
+}
+
+.presidency-text {
+    width: 52%;
+}
+
+.date {
+    color: #b78935;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.presidency-text h3 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.presidency-text p {
+    color: #555;
+
+    margin-bottom: 17px;
+}
+
+.president-number {
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.president-number strong {
+    font-size: 50px;
+
+    color: #b78935;
+}
+
+.president-number span {
+    color: #555;
+}
+
+
+/* 
+   AWARDS
+ */
+
+.awards-section {
+    max-width: none;
+
+    background: #1c1c1c;
+
+    color: white;
+
+    padding-left: calc((100% - 1100px) / 2);
+    padding-right: calc((100% - 1100px) / 2);
+}
+
+.awards-section .section-title h2 {
+    color: white;
+}
+
+.awards-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.award-card {
+    min-height: 180px;
+
+    padding: 30px 22px;
+
+    background: #292929;
+
+    border: 1px solid #3b3b3b;
+
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.award-card:hover {
+    transform: translateY(-4px);
+}
+
+.award-card h3 {
+    color: #d6a84f;
+
+    font-size: 38px;
+
+    margin-bottom: 8px;
+}
+
+.award-card p {
+    color: #dddddd;
+
+    font-size: 17px;
+}
+
+.featured-award {
+    background: #332d20;
+
+    border-color: #d6a84f;
+}
+
+
+/* 
+   BOOKS
+ */
+
+.books-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.book-card {
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #dedbd3;
+
+    border-radius: 2px;
+
+    position: relative;
+
+    transition: 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.book-number {
+    color: #c19a52;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.book-card h3 {
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    color: #666;
+}
+
+
+/* 
+   LEGACY
+ */
+
+.legacy-section {
+    display: flex;
+
+    background: #ded9cf;
+}
+
+.legacy-image {
+    width: 50%;
+}
+
+.legacy-image img {
+    width: 100%;
+    height: 550px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.legacy-content {
+    width: 50%;
+
+    padding: 80px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.legacy-content h2 {
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+.legacy-content p {
+    color: #555;
+
+    margin-bottom: 17px;
+}
+
+
+/* 
+   QUOTE
+ */
+
+.quote-section {
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background: #f8f6f0;
+}
+
+.quote-mark {
+    color: #c49a4d;
+
+    font-size: 70px;
+
+    line-height: 0.8;
+
+    margin-bottom: 25px;
+}
+
+.quote-section blockquote {
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 31px;
+    font-style: italic;
+
+    line-height: 1.5;
+
+    color: #303030;
+}
+
+.quote-section p {
+    margin-top: 25px;
+
+    color: #9a783d;
+
+    font-weight: bold;
+}
+
+
+/* 
+   FOOTER
+ */
+
+.footer {
+    padding: 50px 25px;
+
+    text-align: center;
+
+    background: #151515;
+
+    color: white;
+}
+
+.footer h2 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #aaaaaa;
+}
+
+.footer-line {
+    width: 60px;
+    height: 2px;
+
+    background: #c39a4a;
+
+    margin: 25px auto;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* 
+   MOBILE
+ */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 14px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        padding: 50px 25px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .about-content,
+    .journey-content,
+    .presidency-content {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-text,
+    .journey-text,
+    .journey-image,
+    .presidency-image,
+    .presidency-text {
+        width: 100%;
+    }
+
+    .journey-section,
+    .awards-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .legacy-section {
+        flex-direction: column;
+    }
+
+    .legacy-image,
+    .legacy-content {
+        width: 100%;
+    }
+
+    .legacy-image img {
+        height: 450px;
+    }
+
+    .legacy-content {
+        padding: 60px 25px;
+    }
+
+    .legacy-content h2 {
+        font-size: 38px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .section {
+        padding: 65px 18px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        height: 420px;
+    }
+
+    .about-image img,
+    .journey-image img,
+    .presidency-image img {
+        height: 350px;
+    }
+
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-section {
+        padding: 70px 18px;
+    }
+
+    .quote-section blockquote {
+        font-size: 23px;
+    }
+
+    .legacy-image img {
+        height: 350px;
+    }
+}
